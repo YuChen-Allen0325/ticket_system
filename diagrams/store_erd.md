@@ -1,0 +1,35 @@
+```mermaid
+erDiagram
+    STORE ||--o{ STORE_CHANNEL_MAPPING : has
+    STORE ||--o{ STORE_SERVICE_MAPPING : has
+    STORE ||--o{ STORE_BUSINESS_TIME_MAPPING : has
+    STORE ||--o{ THEME_STORE_MAPPING : has
+    STORE ||--o{ STORE_DETAIL_IMAGE : has
+    STORE ||--o{ STORE_COMMENT : has
+    STORE ||--o{ COUPON : has
+    STORE ||--o{ ELECTRONIC_TICKET : has
+    STORE ||--o{ USER_STORE : has
+    STORE ||--o{ STORE_COUPON : has
+    STORE ||--o{ STORE_TICKET : has
+    STORE ||--o{ STORE_PRODUCTS : has
+    STORE ||--o{ RECOMMEND_STORE : has
+    STORE ||--o{ STORE_ENTERPRISE : has
+    STORE ||--o{ STORE_AUDIT_LOG : modified_by
+    STORE }o--|| BRAND : belongs_to
+    STORE }o--|| CATEGORY : categorized_by
+    STORE_CHANNEL_MAPPING }o--|| CHANNEL : references
+    STORE_SERVICE_MAPPING }o--|| SERVICE : references
+    THEME_STORE_MAPPING }o--|| THEME_STORE : references
+    STORE_COMMENT }o--|| MEMBER : written_by
+    COUPON }o--|| CHANNEL : belongs_to
+    ELECTRONIC_TICKET }o--|| CHANNEL : belongs_to
+    USER_STORE }o--|| USERS : references
+    STORE_COUPON }o--|| COUPON : references
+    STORE_TICKET }o--|| ELECTRONIC_TICKET : references
+    STORE_PRODUCTS }o--|| PRODUCTS : references
+    RECOMMEND_STORE }o--|| CHANNEL : belongs_to
+    PRODUCTS }o--|| CHANNEL : belongs_to
+    PRODUCTS }o--|| STORE : belongs_to
+    FEEDBACK }o--|| STORE : references
+    STORE_ENTERPRISE }o--|| CHANNEL_ENTERPRISE : references
+    STORE_AUDIT_LOG }o--|| USERS : modified_by

@@ -20,3 +20,17 @@ Prevents:<br>
 ✅ Cache Invalidation (Ensure data consistency)<br>
 ● Delete cache on update<br>
 ● Use distributed lock to avoid race condition<br>
+
+**DB Design**
+
+<br>✅1-to-N relationship<br>
+✅leverage database transaction locks to enforce isolation between conflicting operations<br>
+✅Composite index for high-frequency queries<br>
+✅Avoid full table scan<br>
+✅Covering index optimization<br>
+
+
+**Worker Design**
+
+<br>✅heavy batch service<br>
+✅daily processing tasks<br>

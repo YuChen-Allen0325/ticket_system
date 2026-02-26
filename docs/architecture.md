@@ -1,24 +1,24 @@
-** Caching Strategy **
+**Caching Strategy**
+<br>
+✅ Cache Aside Pattern (Lazy Cache)<br>
+Flow:<br>
+⭐ Read from Redis → If miss → Query DB → Write back to Redis → Return result<br>
+<br><br>
+Benefits:<br>
+1️⃣ Reduces DB pressure<br>
+2️⃣ Improves read performance<br>
+<br><br>
 
-✅ Cache Aside Pattern (Lazy Cache)
-Flow:
-⭐ Read from Redis → If miss → Query DB → Write back to Redis → Return result
+✅ TTL Design<br>
+● Hot data: Short TTL<br>
+● Config data: Long TTL<br>
+● maxmemory-policy: volatile-lru<br>
+<br>
+Prevents:<br>
+1️⃣ Cache avalanche<br>
+2️⃣ Stale data accumulation<br>
+<br><br>
 
-Benefits:
-1️⃣ Reduces DB pressure
-2️⃣ Improves read performance
-
-
-✅ TTL Design
-● Hot data: Short TTL
-● Config data: Long TTL
-● maxmemory-policy: volatile-lru
-
-Prevents:
-1️⃣ Cache avalanche
-2️⃣ Stale data accumulation
-
-
-✅ Cache Invalidation (Ensure data consistency)
-● Delete cache on update
-● Use distributed lock to avoid race condition
+✅ Cache Invalidation (Ensure data consistency)<br>
+● Delete cache on update<br>
+● Use distributed lock to avoid race condition<br>

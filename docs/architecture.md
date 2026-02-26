@@ -1,6 +1,6 @@
 **Caching Strategy**
 
-<br>✅ Cache Aside Pattern (Lazy Cache)<br>
+✅ Cache Aside Pattern (Lazy Cache)<br>
 Flow:<br>
 ⭐ Read from Redis → If miss → Query DB → Write back to Redis → Return result<br>
 Benefits:<br>
@@ -23,7 +23,7 @@ Prevents:<br>
 
 **DB Design**
 
-<br>✅1-to-N relationship<br>
+✅1-to-N relationship<br>
 ✅leverage database transaction locks to enforce isolation between conflicting operations<br>
 ✅Composite index for high-frequency queries<br>
 ✅Avoid full table scan<br>
@@ -32,5 +32,5 @@ Prevents:<br>
 
 **Worker Design**
 
-<br>✅heavy batch service<br>
+✅heavy batch service<br>
 ✅daily processing tasks<br>

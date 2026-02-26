@@ -1,13 +1,13 @@
 **Containerization**
 
-<br>🐳 Docker<br>
+🐳 Docker<br>
 ● Each service containerized<br>
 ● Separate environments (sit / dev / prod)<br>
 
 
 **Automation**
 
-<br>🔄 Azure DevOps<br>
+🔄 Azure DevOps<br>
 ● Configure Azure DevOps environment variables<br>
 ● Build Docker image<br>
 ● Push to container registry<br>

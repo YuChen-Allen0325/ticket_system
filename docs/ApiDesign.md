@@ -1,6 +1,6 @@
 **API Layered Architecture**
 
-<br>1️⃣ Controller Layer (DRF View Layer)<br>
+1️⃣ Controller Layer (DRF View Layer)<br>
 ● Handles HTTP request / response<br>
 ● Parameter validation<br>
 ● Authentication & authorization<br>

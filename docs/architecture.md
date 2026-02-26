@@ -6,7 +6,6 @@ Flow:<br>
 Benefits:<br>
 1️⃣ Reduces DB pressure<br>
 2️⃣ Improves read performance<br>
-<br>
 
 ✅ TTL Design<br>
 ● Hot data: Short TTL<br>
@@ -15,7 +14,6 @@ Benefits:<br>
 Prevents:<br>
 1️⃣ Cache avalanche<br>
 2️⃣ Stale data accumulation<br>
-<br>
 
 ✅ Cache Invalidation (Ensure data consistency)<br>
 ● Delete cache on update<br>

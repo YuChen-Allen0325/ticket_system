@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     BRAND ||--o{ STORE : "references"
     CATEGORY ||--o{ STORE : "references"
